@@ -8,11 +8,11 @@ export default function HomePage() {
         <div className="hero-bg"></div>
         <div className="container">
           <div className="hero-inner">
-            <span className="eyebrow" data-animate>East London Decorating Specialists</span>
-            <h1 data-animate data-delay="1">Rooms you&apos;ll<br /><em>love waking up to</em></h1>
-            <p className="hero-sub" data-animate data-delay="2">We&apos;re a small friendly team covering East London. From a single room refresh to a full-house transformation. Painting, papering, plastering, woodwork. Whatever needs doing, we&apos;ll sort it properly.</p>
+            <span className="eyebrow" data-animate>Plymouth &amp; Devon</span>
+            <h1 data-animate data-delay="1">A finish you&apos;ll<br /><em>be proud of</em></h1>
+            <p className="hero-sub" data-animate data-delay="2">Professional painting and decorating in Plymouth and across Devon. Interior, exterior, wallpapering and commercial work — all done properly, with materials that last.</p>
             <div className="hero-actions" data-animate data-delay="3">
-              <Link href="/contact" className="btn btn-brass">Get a Free Quote <i data-lucide="arrow-right"></i></Link>
+              <a href="tel:07950582891" className="btn btn-brass"><i data-lucide="phone"></i> Call for a Free Quote</a>
               <Link href="/services" className="btn btn-ghost">Our Services</Link>
             </div>
           </div>
@@ -28,19 +28,19 @@ export default function HomePage() {
         <div className="container">
           <div className="section-head">
             <span className="eyebrow center" data-animate>Welcome</span>
-            <h2 data-animate data-delay="1">We treat your home like our own</h2>
-            <p data-animate data-delay="2">Hi, I&apos;m Bill. I&apos;ve been decorating homes across East London for over 15 years. We turn up on time, do the job properly, and leave the place spotless. That&apos;s the whole idea.</p>
+            <h2 data-animate data-delay="1">Quality decorating, done right</h2>
+            <p data-animate data-delay="2">Splash of Colour is a Plymouth-based painting and decorating business with over 10 years of experience. We work on homes, offices, schools and commercial buildings across Devon. Good preparation, quality materials and a clean, tidy finish every time.</p>
           </div>
-          <div className="tiles tiles-2" style={{ marginTop: '8px' }}>
-            <div className="text-tile feature-tile" data-animate data-delay="1">
-              <span className="tile-tag"><i data-lucide="user-round"></i> Local &amp; familiar</span>
-              <h3>A friendly face you&apos;ll get to know</h3>
-              <p>You&apos;ll deal with the same people every time. No strangers turning up, no call centres. Just me and a small team who take real pride in the work.</p>
+          <div className="tiles tiles-2" style={{ marginTop: '8px', marginBottom: '60px' }}>
+            <div className="text-tile feature-tile" data-animate data-delay="1" style={{ textAlign: 'center' }}>
+              <span className="tile-tag" style={{ justifyContent: 'center' }}><i data-lucide="sparkles"></i> The finish matters</span>
+              <h3>Preparation is everything</h3>
+              <p>A good paint job starts long before the brush goes on. We take the time to prep surfaces properly so the finish looks sharp and lasts for years.</p>
             </div>
-            <div className="text-tile feature-tile" data-animate data-delay="2">
-              <span className="tile-tag"><i data-lucide="check-check"></i> No fuss</span>
-              <h3>Easy to book, easy to trust</h3>
-              <p>Give us a ring and we&apos;ll pop round, take a look, and give you a straight price. No pressure, no surprises on the invoice.</p>
+            <div className="text-tile feature-tile" data-animate data-delay="2" style={{ textAlign: 'center' }}>
+              <span className="tile-tag" style={{ justifyContent: 'center' }}><i data-lucide="check-check"></i> Free, no-obligation quotes</span>
+              <h3>Straight prices, no surprises</h3>
+              <p>We come out, have a look and give you a clear price. No hidden extras, no hard sell. Just give us a call and we&apos;ll take it from there.</p>
             </div>
           </div>
         </div>
@@ -48,20 +48,20 @@ export default function HomePage() {
           <div className="container">
             <div className="stats-grid">
               <div data-animate data-delay="1">
-                <div className="stat-num"><span data-count="500">0</span><span className="suffix">+</span></div>
-                <div className="stat-label">Rooms Decorated</div>
+                <div className="stat-num"><span data-count="10">0</span><span className="suffix">+</span></div>
+                <div className="stat-label">Years&apos; Experience</div>
               </div>
               <div data-animate data-delay="2">
-                <div className="stat-num"><span data-count="15">0</span><span className="suffix">+</span></div>
-                <div className="stat-label">Years Experience</div>
+                <div className="stat-num"><span data-count="5">0</span><span className="suffix">★</span></div>
+                <div className="stat-label">Average Rating</div>
               </div>
               <div data-animate data-delay="3">
-                <div className="stat-num"><span data-count="98">0</span><span className="suffix">%</span></div>
-                <div className="stat-label">Happy Customers</div>
+                <div className="stat-num"><span data-count="100">0</span><span className="suffix">%</span></div>
+                <div className="stat-label">5-Star Reviews</div>
               </div>
               <div data-animate data-delay="4">
-                <div className="stat-num"><span data-count="6">0</span></div>
-                <div className="stat-label">Core Services</div>
+                <div className="stat-num"><span data-count="6">0</span><span className="suffix">+</span></div>
+                <div className="stat-label">Services Offered</div>
               </div>
             </div>
           </div>
@@ -73,39 +73,39 @@ export default function HomePage() {
         <div className="container">
           <div className="section-head">
             <span className="eyebrow center" data-animate>What We Do</span>
-            <h2 data-animate data-delay="1">A complete decorating service</h2>
-            <p data-animate data-delay="2">From a quick freshen-up to a full-house transformation, every job gets the same care and attention to detail.</p>
+            <h2 data-animate data-delay="1">A full decorating service</h2>
+            <p data-animate data-delay="2">From a single room refresh to a full exterior repaint — every job gets the same attention to detail.</p>
           </div>
           <div className="grid grid-3">
             <div className="card" data-animate data-delay="1">
-              <div className="card-icon"><i data-lucide="paintbrush"></i></div>
-              <h3>Interior Painting</h3>
-              <p>Walls, ceilings, hallways, bedrooms. Clean prep, good coverage and a finish that actually lasts.</p>
+              <div className="card-icon"><i data-lucide="paint-roller"></i></div>
+              <h3>Interior Painting &amp; Decorating</h3>
+              <p>Walls, ceilings, woodwork and feature walls — finished cleanly and neatly with minimal disruption to your home.</p>
             </div>
             <div className="card" data-animate data-delay="2">
               <div className="card-icon"><i data-lucide="home"></i></div>
               <h3>Exterior Painting</h3>
-              <p>Weatherproof protection for render, brickwork, soffits, fascias and timber. Done properly so it holds.</p>
+              <p>Fascias, soffits, render, masonry and timber — properly prepared and painted to protect your property from the elements.</p>
             </div>
             <div className="card" data-animate data-delay="3">
               <div className="card-icon"><i data-lucide="layers"></i></div>
               <h3>Wallpapering</h3>
-              <p>Hung straight and matched perfectly. Lining paper, feature walls, full-room papering, we do it all.</p>
+              <p>All types of wallpaper including feature walls, tricky surfaces and full-room papering. Measured, hung and trimmed to a precise finish.</p>
             </div>
             <div className="card" data-animate data-delay="1">
-              <div className="card-icon"><i data-lucide="hammer"></i></div>
-              <h3>Plastering &amp; Prep</h3>
-              <p>Skim, fill, sand. We sort the surface before anything goes on it. A good finish starts with good prep.</p>
+              <div className="card-icon"><i data-lucide="wrench"></i></div>
+              <h3>Repairs &amp; Preparation</h3>
+              <p>Filling cracks, sanding, priming and making good — all the prep work done right before a single drop of paint goes on.</p>
             </div>
             <div className="card" data-animate data-delay="2">
-              <div className="card-icon"><i data-lucide="ruler"></i></div>
-              <h3>Woodwork &amp; Trim</h3>
-              <p>Skirting boards, doors, window frames and banisters painted to a clean, durable finish.</p>
+              <div className="card-icon"><i data-lucide="building-2"></i></div>
+              <h3>Commercial Decorating</h3>
+              <p>Offices, schools, hospitals and surgeries decorated to a professional standard — on time and with minimal disruption.</p>
             </div>
             <div className="card" data-animate data-delay="3">
               <div className="card-icon"><i data-lucide="palette"></i></div>
-              <h3>Feature Walls</h3>
-              <p>Bold colours, specialist finishes, murals. If you can picture it, we can help you make it happen.</p>
+              <h3>Colour Advice</h3>
+              <p>Not sure on colours or finishes? We&apos;re happy to advise — whether it&apos;s a bold feature wall or a neutral refresh throughout.</p>
             </div>
           </div>
           <div className="text-center" style={{ marginTop: '46px' }} data-animate>
@@ -118,29 +118,29 @@ export default function HomePage() {
       <section className="section">
         <div className="container">
           <div className="section-head">
-            <span className="eyebrow center" data-animate>Why Choose Bill&apos;s</span>
+            <span className="eyebrow center" data-animate>Why Splash of Colour</span>
             <h2 data-animate data-delay="1">The difference is in the details</h2>
           </div>
           <div className="grid grid-4">
             <div className="feature" data-animate data-delay="1">
               <div className="feature-icon"><i data-lucide="award"></i></div>
-              <h3>Quality Finish</h3>
-              <p>Every job, big or small, gets the same careful prep and clean result.</p>
+              <h3>Fully Qualified</h3>
+              <p>Professionally trained and fully insured for all interior and exterior decorating work.</p>
             </div>
             <div className="feature" data-animate data-delay="2">
               <div className="feature-icon"><i data-lucide="handshake"></i></div>
-              <h3>Friendly &amp; Reliable</h3>
-              <p>We turn up when we say we will and keep you in the loop throughout.</p>
+              <h3>Reliable &amp; Tidy</h3>
+              <p>Always on time, always tidy. We clean up daily and leave your home the way we found it.</p>
             </div>
             <div className="feature" data-animate data-delay="3">
               <div className="feature-icon"><i data-lucide="map-pin"></i></div>
-              <h3>Local to You</h3>
-              <p>Based in East London. We know the area and we&apos;re not far away.</p>
+              <h3>Based in Plymouth</h3>
+              <p>Covering Plymouth and across Devon — residential and commercial work welcome.</p>
             </div>
             <div className="feature" data-animate data-delay="4">
-              <div className="feature-icon"><i data-lucide="shield-check"></i></div>
-              <h3>Honest Pricing</h3>
-              <p>Clear quotes with no hidden extras. What we say is what you pay.</p>
+              <div className="feature-icon"><i data-lucide="badge-pound-sterling"></i></div>
+              <h3>Free Quotes</h3>
+              <p>No-obligation quotes with clear, honest pricing and no hidden extras.</p>
             </div>
           </div>
         </div>
@@ -149,11 +149,11 @@ export default function HomePage() {
       {/* ═══════ CTA ═══════ */}
       <section className="cta section">
         <div className="container">
-          <h2 data-animate>Ready to freshen things up?</h2>
-          <p data-animate data-delay="1">Get in touch today for a free, no-obligation quote.</p>
+          <h2 data-animate>Ready to brighten up your home?</h2>
+          <p data-animate data-delay="1">Free, no-obligation quotes — get in touch today.</p>
           <div className="cta-actions" data-animate data-delay="2">
-            <a href="tel:07460413349" className="btn btn-ghost"><i data-lucide="phone"></i> 07460 413349</a>
-            <Link href="/contact" className="btn btn-brass">Request a Quote <i data-lucide="arrow-right"></i></Link>
+            <a href="tel:07950582891" className="btn btn-brass"><i data-lucide="phone"></i> 07950 582891</a>
+            <Link href="/contact" className="btn btn-ghost">Send a Message <i data-lucide="arrow-right"></i></Link>
           </div>
         </div>
       </section>

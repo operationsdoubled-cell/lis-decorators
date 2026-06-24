@@ -20,10 +20,10 @@ export default function Header() {
       <div className="container">
         <nav className="nav-inner">
           <Link href="/" className="nav-logo">
-            <span className="nav-logo-mark"><i data-lucide="paintbrush"></i></span>
+            <span className="nav-logo-mark"><i data-lucide="paint-roller"></i></span>
             <span className="nav-logo-text">
-              <strong>Bill&apos;s Painting</strong>
-              <span>Decorating · East London</span>
+              <strong>Splash of Colour</strong>
+              <span>Painter &amp; Decorator · Plymouth</span>
             </span>
           </Link>
 
@@ -39,7 +39,7 @@ export default function Header() {
                 </Link>
               </li>
             ))}
-            <li><Link href="/contact#quote" className="btn-book">Get a Quote</Link></li>
+            <li><Link href="/contact#booking" className="btn-book">Book Now</Link></li>
           </ul>
         </nav>
       </div>

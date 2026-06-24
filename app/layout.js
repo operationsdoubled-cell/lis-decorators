@@ -5,9 +5,9 @@ import Footer from '@/components/Footer';
 import Effects from '@/components/Effects';
 
 export const metadata = {
-  title: "Bill's Painting & Decorating | East London",
+  title: 'Splash of Colour | Painter & Decorator in Plymouth, Devon',
   description:
-    "Bill's Painting & Decorating. Friendly, reliable interior and exterior decorating across East London. Free no-obligation quotes. Call 07460 413349.",
+    'Professional painting and decorating in Plymouth and across Devon. Interior, exterior, wallpapering and commercial work. Fully qualified and insured. Call 07950 582891 for a free quote.',
 };
 
 export default function RootLayout({ children }) {
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </head>

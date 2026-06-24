@@ -7,14 +7,15 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-col">
             <div className="footer-brand">
-              <span className="nav-logo-mark"><i data-lucide="paintbrush"></i></span>
-              <strong>Bill&apos;s Painting</strong>
+              <span className="nav-logo-mark"><i data-lucide="paint-roller"></i></span>
+              <strong>Splash of Colour</strong>
             </div>
-            <p>Friendly local painting and decorating across East London. Honest prices, tidy work, every time.</p>
+            <p>Professional painting and decorating in Plymouth and across Devon. Fully qualified, fully insured.</p>
             <div className="footer-social">
-              <a href="https://www.instagram.com/bills.decor?igsh=MTcwNno4a2RreXduOQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i data-lucide="instagram"></i></a>
               {/* FACEBOOK: replace # with your Facebook page URL */}
               <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+              {/* INSTAGRAM: replace # with your Instagram profile URL */}
+              <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
             </div>
           </div>
           <div className="footer-col">
@@ -22,35 +23,31 @@ export default function Footer() {
             <ul>
               <li><Link href="/">Home</Link></li>
               <li><Link href="/services">Services</Link></li>
-              <li><Link href="/about">About Bill</Link></li>
+              <li><Link href="/about">About</Link></li>
               <li><Link href="/gallery">Gallery</Link></li>
               <li><Link href="/reviews">Reviews</Link></li>
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
           <div className="footer-col">
-            <h4>Working Hours</h4>
-            {/* OPENING HOURS: update to your real hours */}
+            <h4>Opening Hours</h4>
             <ul>
-              <li>Mon – Fri: 7:30am – 5:30pm</li>
-              <li>Saturday: 8am – 1pm</li>
+              <li>Mon – Sat: 8am – 8pm</li>
               <li>Sunday: Closed</li>
             </ul>
           </div>
           <div className="footer-col">
             <h4>Get in Touch</h4>
             <ul className="footer-contact">
-              <li><i data-lucide="phone"></i> <a href="tel:07460413349">07460 413349</a></li>
-              {/* EMAIL: replace with your real email address */}
-              <li><i data-lucide="mail"></i> <a href="mailto:hello@billspainting.co.uk">hello@billspainting.co.uk</a></li>
-              {/* ADDRESS: add your postcode when ready */}
-              <li><i data-lucide="map-pin"></i> East London</li>
+              <li><i data-lucide="phone"></i> <a href="tel:07950582891">07950 582891</a></li>
+              {/* EMAIL: add your email address here */}
+              <li><i data-lucide="mail"></i> <a href="mailto:info@splashofcolour.co.uk">info@splashofcolour.co.uk</a></li>
+              <li><i data-lucide="map-pin"></i> Plymouth, Devon, PL3 6RZ</li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
-          {/* ADDRESS: update with your full address/postcode */}
-          <p>&copy; 2026 Bill&apos;s Painting &amp; Decorating · East London</p>
+          <p>&copy; 2026 Splash of Colour &middot; Plymouth, Devon PL3 6RZ</p>
         </div>
       </div>
     </footer>

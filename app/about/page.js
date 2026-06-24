@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: "About | Bill's Painting & Decorating",
-  description: "Meet Bill — East London painter and decorator with 15+ years of experience. Honest, reliable, and proud of every job.",
+  title: 'About | Splash of Colour',
+  description: 'About Splash of Colour — professional painting and decorating in Plymouth and Devon for over 10 years. Fully qualified, fully insured.',
 };
 
 export default function AboutPage() {
@@ -11,39 +11,38 @@ export default function AboutPage() {
       <section className="page-hero">
         <div className="page-hero-bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1800&q=80')" }}></div>
         <div className="container">
-          <span className="eyebrow center" data-animate>About Bill</span>
+          <span className="eyebrow center" data-animate>About Us</span>
           <h1 data-animate data-delay="1">A little about who we are</h1>
-          <p data-animate data-delay="2">The story, the values and the person behind every room we decorate.</p>
+          <p data-animate data-delay="2">The story and values behind every job we take on.</p>
         </div>
       </section>
 
-      {/* ═══════ MEET BILL ═══════ */}
+      {/* ═══════ STORY ═══════ */}
       <section className="section">
         <div className="container">
           <div className="split">
             <div className="split-media placeholder" data-animate="left">
-              {/* PHOTO: replace this block with a real photo of Bill —
-                  put your image in /public/images and use:
-                  <div className="split-media" data-animate="left"><img src="/images/bill.jpg" alt="Bill, painter and decorator" /></div> */}
-              <i data-lucide="paintbrush"></i>
-              <div className="badge"><strong>15+ yrs</strong><span>decorating East London homes</span></div>
+              {/* PHOTO: replace with a real photo of you or your work —
+                  save your image to /public/images/ and use:
+                  <div className="split-media" data-animate="left"><img src="/images/about.jpg" alt="Splash of Colour decorator" /></div> */}
+              <i data-lucide="paint-roller"></i>
+              <div className="badge"><strong>10+ yrs</strong><span>decorating Plymouth &amp; Devon</span></div>
             </div>
             <div data-animate="right">
-              <span className="eyebrow">Meet Bill</span>
-              <h2 style={{ marginBottom: '24px' }}>Hi, I&apos;m Bill</h2>
+              <span className="eyebrow">Our Story</span>
+              <h2 style={{ marginBottom: '24px' }}>Plymouth-based, proud of every finish</h2>
               <div className="tiles">
                 <div className="text-tile" data-animate data-delay="1">
-                  <span className="tile-tag"><i data-lucide="paintbrush"></i> How it started</span>
-                  <p>I&apos;ve been picking up a paintbrush since I was about sixteen, starting out helping my uncle on jobs around East London. Back then I just liked the satisfaction of seeing a room come together. Still do. About fifteen years ago I went out on my own, and I haven&apos;t looked back.</p>
+                  <span className="tile-tag"><i data-lucide="paint-roller"></i> Who we are</span>
+                  <p>Splash of Colour is a professional painting and decorating business based in Plymouth, Devon. With over 10 years of experience, we work on homes, schools, offices, hospitals and commercial properties across Plymouth and the surrounding area.</p>
                 </div>
                 <div className="text-tile" data-animate data-delay="2">
-                  <span className="tile-tag"><i data-lucide="users"></i> How we work</span>
-                  <p>These days it&apos;s me and a small team I trust completely. We do interior and exterior painting, wallpapering, plastering, woodwork and feature walls. The full job. No outsourcing, no strangers turning up on your doorstep. You&apos;ll know who&apos;s coming, and they&apos;ll know what they&apos;re doing.</p>
+                  <span className="tile-tag"><i data-lucide="sparkles"></i> How we work</span>
+                  <p>We take preparation seriously — it&apos;s what separates a finish that lasts from one that doesn&apos;t. Every job gets properly cleaned, filled, sanded and primed before we pick up a brush. We work tidily, clean up daily and leave your property the way we found it.</p>
                 </div>
                 <div className="text-tile feature-tile" data-animate data-delay="3">
                   <span className="tile-tag"><i data-lucide="heart-handshake"></i> Our promise</span>
-                  <p>What we&apos;ll never do is rush the prep, paint over problems, or leave a site anything less than tidy. A good finish starts with good preparation, and we take that seriously. The job isn&apos;t done until you&apos;re happy.</p>
-                  <p style={{ marginTop: '12px' }}><strong>— Bill</strong></p>
+                  <p>We do what we say we&apos;ll do — show up when agreed, price honestly and finish to a standard we&apos;re proud of. Every single job, no matter the size.</p>
                 </div>
               </div>
             </div>
@@ -60,24 +59,24 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-4">
             <div className="value-card" data-animate data-delay="1">
-              <div className="card-icon"><i data-lucide="award"></i></div>
-              <h3>Pride in Our Work</h3>
-              <p>Every room gets our full attention, whether it&apos;s a quick hallway refresh or a full-house repaint.</p>
+              <div className="card-icon"><i data-lucide="shield-check"></i></div>
+              <h3>Fully Insured</h3>
+              <p>All work is fully insured for your peace of mind — residential and commercial.</p>
             </div>
             <div className="value-card" data-animate data-delay="2">
               <div className="card-icon"><i data-lucide="handshake"></i></div>
-              <h3>Honest &amp; Straightforward</h3>
-              <p>Clear quotes, no surprise charges, and honest advice about what your walls actually need.</p>
+              <h3>Honest Pricing</h3>
+              <p>Clear quotes with no hidden costs. We tell you exactly what the job involves and what it will cost before we start.</p>
             </div>
             <div className="value-card" data-animate data-delay="3">
               <div className="card-icon"><i data-lucide="clock"></i></div>
-              <h3>Reliable &amp; Punctual</h3>
-              <p>We respect your time. If anything changes we&apos;ll always let you know well in advance.</p>
+              <h3>Punctual &amp; Tidy</h3>
+              <p>We arrive when we say we will, protect your home while we work and clean up properly every day.</p>
             </div>
             <div className="value-card" data-animate data-delay="4">
-              <div className="card-icon"><i data-lucide="shield-check"></i></div>
-              <h3>Clean &amp; Tidy</h3>
-              <p>Dust sheets down, furniture protected, mess cleared. We leave the place as we found it. Just with better walls.</p>
+              <div className="card-icon"><i data-lucide="award"></i></div>
+              <h3>Quality Materials</h3>
+              <p>We use good quality paints and materials on every job — because the right products make the finish last.</p>
             </div>
           </div>
         </div>
@@ -87,21 +86,21 @@ export default function AboutPage() {
       <section className="section">
         <div className="container text-center" style={{ maxWidth: '680px' }}>
           <span className="eyebrow center" data-animate>Where We Work</span>
-          <h2 data-animate data-delay="1">East London &amp; surrounding areas</h2>
-          <p className="lead" data-animate data-delay="2">We&apos;re based in <strong>East London</strong> and cover the surrounding boroughs. Not sure if we reach you? Give us a quick call and we&apos;ll let you know straight away.</p>
+          <h2 data-animate data-delay="1">Plymouth &amp; across Devon</h2>
+          <p className="lead" data-animate data-delay="2">We&apos;re based in <strong>Plymouth, Devon PL3</strong> and cover Plymouth and the surrounding areas throughout Devon. Residential and commercial work welcome. Not sure if we cover your area? Just give us a call and we&apos;ll let you know.</p>
           <div data-animate data-delay="3" style={{ marginTop: '24px' }}>
-            <Link href="/contact" className="btn btn-dark">Get in Touch <i data-lucide="arrow-right"></i></Link>
+            <a href="tel:07950582891" className="btn btn-dark"><i data-lucide="phone"></i> 07950 582891</a>
           </div>
         </div>
       </section>
 
       <section className="cta section">
         <div className="container">
-          <h2 data-animate>Let&apos;s talk about your decorating</h2>
-          <p data-animate data-delay="1">Get in touch for a free, no-obligation quote.</p>
+          <h2 data-animate>Ready to get started?</h2>
+          <p data-animate data-delay="1">Free, no-obligation quotes — give us a call today.</p>
           <div className="cta-actions" data-animate data-delay="2">
-            <a href="tel:07460413349" className="btn btn-ghost"><i data-lucide="phone"></i> 07460 413349</a>
-            <Link href="/contact" className="btn btn-brass">Contact Us <i data-lucide="arrow-right"></i></Link>
+            <a href="tel:07950582891" className="btn btn-brass"><i data-lucide="phone"></i> 07950 582891</a>
+            <Link href="/contact" className="btn btn-ghost">Contact Us <i data-lucide="arrow-right"></i></Link>
           </div>
         </div>
       </section>

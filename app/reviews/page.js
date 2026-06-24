@@ -1,63 +1,57 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: "Reviews | Bill's Painting & Decorating",
-  description: "Customer reviews for Bill's Painting & Decorating — see what East London homeowners say about our decorating work.",
+  title: 'Reviews | Splash of Colour',
+  description: 'See what customers say about Splash of Colour — 5-star painting and decorating in Plymouth and Devon.',
 };
 
-/* HOW TO ADD REAL REVIEWS: copy an object in the list below and fill in
-   the quote, the author's initial, name and location/date. */
 const reviews = [
   {
-    initial: 'C',
-    name: 'Claire N.',
-    meta: 'Stratford, E15 · May 2025',
-    text: 'Bill decorated our entire upstairs, three bedrooms and the landing. He was clean, tidy, no mess left behind and the finish is brilliant. He actually noticed a bit of damp we hadn\'t spotted and sorted it before painting over it. Would absolutely use him again and already have.',
+    initial: 'J',
+    name: 'John C',
+    meta: 'FreeIndex Review',
+    text: 'Brilliant job done on the interior of our house. Really tidy, professional and the finish is spot on. Would highly recommend to anyone looking for a good decorator in Plymouth.',
   },
   {
-    initial: 'M',
-    name: 'Michael T.',
-    meta: 'Walthamstow, E17 · April 2025',
-    text: 'Had the whole house done while we moved out for two weeks. Bill\'s team worked through it professionally, matched the colours exactly and left the place looking like a show home. Really good value for money and not a drop of paint out of place.',
+    initial: 'W',
+    name: '38 Waycott Walk',
+    meta: 'FreeIndex Review',
+    text: 'Very pleased with the work done at our property. The preparation was thorough and the finish is excellent. Turned up when he said he would and cleaned up every day. Great service.',
   },
   {
     initial: 'S',
-    name: 'Sandra K.',
-    meta: 'Hackney, E8 · March 2025',
-    text: 'Booked Bill for a feature wall in the living room, a deep navy with a geometric wallpaper we were nervous about. He took his time, did a test patch first to make sure we were happy, and the result is stunning. Patient, skilled and really easy to deal with.',
+    name: 'Stephen Tomlinson',
+    meta: 'FreeIndex Review',
+    text: 'Used Splash of Colour for exterior painting — fascias, soffits and windows. Really good work, took his time to do it properly and the result looks great. Fair price too.',
   },
   {
-    initial: 'T',
-    name: 'Tony H.',
-    meta: 'Bow, E3 · February 2025',
-    text: 'Exterior painting on a Victorian terrace, not an easy job. Bill prepped all the woodwork properly, filled the cracks, primed everything before putting the top coats on. Six months later it still looks as fresh as the day it dried. That\'s proper workmanship.',
+    initial: 'N',
+    name: 'Nicola Sawbridge',
+    meta: 'FreeIndex Review',
+    text: 'Hired for wallpapering in the lounge and bedroom. Really careful work — pattern perfectly matched throughout, no bubbles, clean edges. Very happy with how it turned out.',
   },
   {
-    initial: 'L',
-    name: 'Laura M.',
-    meta: 'Bethnal Green, E2 · January 2025',
-    text: 'Needed a plasterer and decorator together for a new extension wall. Bill handled the whole thing. Plastered it himself, let it breathe properly, then painted it perfectly. One phone call, one reliable team, one invoice. Very straightforward and a lovely result.',
-  },
-  {
-    initial: 'D',
-    name: 'Dave & Karen W.',
-    meta: 'Leyton, E10 · December 2024',
-    text: 'Kitchen and hallway painted throughout, plus all the skirting boards and doors. Bill pointed out a few bits of prep we hadn\'t thought about and it made a real difference to the final finish. Sensible prices, cheerful team and they left the place spotless.',
+    initial: 'P',
+    name: 'Pete M',
+    meta: 'FreeIndex Review',
+    text: "Good communication, arrived on time every day and did a thorough job. The rooms look fantastic — much better than previous decorators we've used. Will be using again for the rest of the house.",
   },
 ];
 
 export default function ReviewsPage() {
   return (
     <>
+      {/* 1. PAGE HERO */}
       <section className="page-hero">
-        <div className="page-hero-bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?auto=format&fit=crop&w=1800&q=80')" }}></div>
+        <div className="page-hero-bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=1800&q=80')" }}></div>
         <div className="container">
           <span className="eyebrow center" data-animate>Testimonials</span>
           <h1 data-animate data-delay="1">What our customers say</h1>
-          <p data-animate data-delay="2">Don&apos;t just take our word for it. Here&apos;s what East London homeowners think of our work.</p>
+          <p data-animate data-delay="2">100% 5-star reviews from customers across Plymouth and Devon.</p>
         </div>
       </section>
 
+      {/* 2. REVIEWS GRID */}
       <section className="section bg-cream-deep">
         <div className="container">
           <div className="grid grid-3">
@@ -73,25 +67,17 @@ export default function ReviewsPage() {
               </div>
             ))}
           </div>
-
-          {/* GOOGLE REVIEWS WIDGET PLACEHOLDER
-              When ready, delete this block and paste your widget embed code
-              (Elfsight, Trustindex, etc.) in its place. */}
-          <div className="placeholder-box" style={{ marginTop: '48px' }} data-animate>
-            <div className="big-icon"><i data-lucide="star"></i></div>
-            <h3>Live Google Reviews</h3>
-            <p>This space is reserved for a live Google Reviews feed. When you&apos;re ready, paste your widget embed code here in place of this box — popular options include <strong>Elfsight</strong>, <strong>Trustindex</strong>, or your Google Business Profile widget. Search the code for <code>GOOGLE REVIEWS WIDGET PLACEHOLDER</code> to find this spot.</p>
-          </div>
         </div>
       </section>
 
+      {/* 3. CTA */}
       <section className="cta section">
         <div className="container">
           <h2 data-animate>Join our happy customers</h2>
-          <p data-animate data-delay="1">Get in touch today for a free, no-obligation quote.</p>
+          <p data-animate data-delay="1">Free, no-obligation quotes — get in touch today.</p>
           <div className="cta-actions" data-animate data-delay="2">
-            <a href="tel:07460413349" className="btn btn-ghost"><i data-lucide="phone"></i> 07460 413349</a>
-            <Link href="/contact" className="btn btn-brass">Get a Quote <i data-lucide="arrow-right"></i></Link>
+            <a href="tel:07950582891" className="btn btn-brass"><i data-lucide="phone"></i> 07950 582891</a>
+            <Link href="/contact" className="btn btn-ghost">Get in Touch <i data-lucide="arrow-right"></i></Link>
           </div>
         </div>
       </section>
