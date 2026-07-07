@@ -285,12 +285,15 @@ strong { color: var(--ink); font-weight: 600; }
     transform: translateX(100%);
     transition: transform 0.45s var(--ease);
     box-shadow: var(--shadow-lg);
+    z-index: 1050;                    /* must sit above backdrop (999) */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .nav-links.open { transform: translateX(0); }
-  .nav-links a { color: var(--forest) !important; font-size: 1.2rem; padding: 14px 18px; }
+  .nav-links a { color: var(--forest) !important; font-size: 1.15rem; padding: 16px 18px; min-height: 52px; display: flex; align-items: center; }
   .nav-links a::after { display: none; }
   .nav-links li:last-child { margin: 14px 0 0; }
-  .btn-book { justify-content: center; }
+  .btn-book { justify-content: center; min-height: 52px; }
   .nav-backdrop {
     position: fixed; inset: 0;
     background: rgba(20,53,42,0.4);
@@ -958,4 +961,61 @@ select:focus-visible, textarea:focus-visible, .gallery-item:focus-visible {
   outline: 3px solid var(--brass);
   outline-offset: 3px;
   border-radius: 6px;
+}
+
+/* ============================================================
+   MOBILE — phones (≤ 560px)
+   ============================================================ */
+@media (max-width: 560px) {
+  /* Typography scale-down */
+  h1 { font-size: clamp(2rem, 9vw, 2.8rem); }
+  h2 { font-size: clamp(1.55rem, 7vw, 2.1rem); }
+  h3 { font-size: 1.2rem; }
+
+  /* Hero — tighter padding, actions stack full-width */
+  .hero-inner { padding: 100px 0 70px; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { justify-content: center; width: 100%; }
+  .hero-scroll { display: none; }
+
+  /* Sections — less vertical space */
+  .section { padding: clamp(48px, 10vw, 64px) 0; }
+  .section-tight { padding: clamp(28px, 6vw, 40px) 0; }
+
+  /* Stats — 2 columns on phones */
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+
+  /* Cards full-width */
+  .grid-3, .grid-4 { grid-template-columns: 1fr; }
+
+  /* CTA buttons stack */
+  .cta-actions { flex-direction: column; align-items: stretch; }
+  .cta-actions .btn { justify-content: center; width: 100%; }
+
+  /* Gallery — single column, shorter rows */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 220px;
+    gap: 12px;
+  }
+  .gallery-item.tall { grid-row: span 1; }
+
+  /* Tiles — stack */
+  .tiles-2 { grid-template-columns: 1fr; }
+
+  /* Contact form full-width inputs */
+  .form-row { grid-template-columns: 1fr; }
+
+  /* Booking section padding */
+  .booking-section { padding: 36px 22px; }
+
+  /* Page hero — less top padding */
+  .page-hero { padding: 110px 0 48px; }
+
+  /* Service rows — hide number on very small */
+  .service-row .num { font-size: 2rem; }
+  .service-row { padding: 24px 18px; gap: 10px; }
+
+  /* Buttons — better tap target */
+  .btn { padding: 15px 24px; min-height: 50px; }
 }
