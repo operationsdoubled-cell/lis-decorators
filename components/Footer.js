@@ -8,13 +8,11 @@ export default function Footer() {
           <div className="footer-col">
             <div className="footer-brand">
               <span className="nav-logo-mark"><i data-lucide="paint-roller"></i></span>
-              <strong>Splash of Colour</strong>
+              <strong>LIS Decorators</strong>
             </div>
-            <p>Professional painting and decorating in Plymouth and across Devon. Fully qualified, fully insured.</p>
+            <p>Professional painting and decorating across Devon and Cornwall. Reliable, high quality, great value. Transforming spaces. Enhancing homes.</p>
             <div className="footer-social">
-              {/* FACEBOOK: replace # with your Facebook page URL */}
               <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook"></i></a>
-              {/* INSTAGRAM: replace # with your Instagram profile URL */}
               <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
             </div>
           </div>
@@ -32,22 +30,22 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Opening Hours</h4>
             <ul>
-              <li>Mon – Sat: 8am – 8pm</li>
-              <li>Sunday: Closed</li>
+              <li>Mon – Fri: 8am – 7pm</li>
+              <li>Saturday: 8am – 5pm</li>
+              <li>Sunday: 9am – 5pm</li>
             </ul>
           </div>
           <div className="footer-col">
             <h4>Get in Touch</h4>
             <ul className="footer-contact">
-              <li><i data-lucide="phone"></i> <a href="tel:07950582891">07950 582891</a></li>
-              {/* EMAIL: add your email address here */}
-              <li><i data-lucide="mail"></i> <a href="mailto:info@splashofcolour.co.uk">info@splashofcolour.co.uk</a></li>
-              <li><i data-lucide="map-pin"></i> Plymouth, Devon, PL3 6RZ</li>
+              <li><i data-lucide="phone"></i> <a href="tel:07548625358">07548 625358</a></li>
+              <li><i data-lucide="mail"></i> <a href="mailto:LISdecorators@outlook.com">LISdecorators@outlook.com</a></li>
+              <li><i data-lucide="map-pin"></i> Dobwalls, Liskeard, Cornwall PL14 6JP</li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2026 Splash of Colour &middot; Plymouth, Devon PL3 6RZ</p>
+          <p>&copy; 2026 LIS Decorators Devon &amp; Cornwall &middot; Dobwalls, Liskeard PL14 6JP</p>
         </div>
       </div>
     </footer>

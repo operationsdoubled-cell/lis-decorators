@@ -22,8 +22,8 @@ export default function Header() {
           <Link href="/" className="nav-logo">
             <span className="nav-logo-mark"><i data-lucide="paint-roller"></i></span>
             <span className="nav-logo-text">
-              <strong>Splash of Colour</strong>
-              <span>Painter &amp; Decorator · Plymouth</span>
+              <strong>LIS Decorators</strong>
+              <span>Devon &amp; Cornwall</span>
             </span>
           </Link>
 

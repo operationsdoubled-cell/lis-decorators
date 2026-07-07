@@ -5,9 +5,9 @@ import Footer from '@/components/Footer';
 import Effects from '@/components/Effects';
 
 export const metadata = {
-  title: 'Splash of Colour | Painter & Decorator in Plymouth, Devon',
+  title: 'LIS Decorators Devon & Cornwall | Professional Painter & Decorator',
   description:
-    'Professional painting and decorating in Plymouth and across Devon. Interior, exterior, wallpapering and commercial work. Fully qualified and insured. Call 07950 582891 for a free quote.',
+    'Professional painting and decorating across Devon and Cornwall. Interior, exterior, wallpaper hanging, pressure washing and roof & gutter cleaning. Call 07548 625358 for a free quote.',
 };
 
 export default function RootLayout({ children }) {
