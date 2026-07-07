@@ -316,7 +316,7 @@ strong { color: var(--ink); font-weight: 600; }
 .hero-bg {
   position: absolute;
   inset: -8% 0;
-  background-image: url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=2000&q=80');
+  background-image: url('https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=2000&q=80');
   background-size: cover;
   background-position: center;
   will-change: transform;
