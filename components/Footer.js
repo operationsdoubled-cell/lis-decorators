@@ -13,7 +13,6 @@ export default function Footer() {
             <p>Professional painting and decorating across Devon and Cornwall. Reliable, high quality, great value. Transforming spaces. Enhancing homes.</p>
             <div className="footer-social">
               <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook"></i></a>
-              <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
             </div>
           </div>
           <div className="footer-col">

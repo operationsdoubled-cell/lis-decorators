@@ -42,10 +42,6 @@ export default function ContactPage() {
                 <div className="ci"><i data-lucide="clock"></i></div>
                 <div><strong>Opening Hours</strong><p>Mon – Fri: 8am – 7pm<br />Saturday: 8am – 5pm<br />Sunday: 9am – 5pm</p></div>
               </div>
-              <div className="contact-detail">
-                <div className="ci"><i data-lucide="instagram"></i></div>
-                <div><strong>Instagram</strong><p><a href="#" target="_blank" rel="noopener">Follow us for inspiration</a></p></div>
-              </div>
             </div>
 
             <div data-animate="right">
