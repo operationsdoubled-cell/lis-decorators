@@ -20,8 +20,9 @@ export default function AboutPage() {
       <section className="section">
         <div className="container">
           <div className="split">
-            <div className="split-media placeholder" data-animate="left">
-              <i data-lucide="paint-roller"></i>
+            <div className="split-media" data-animate="left">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/LIS_about.jpg" alt="White-rendered Cornish cottage on the coast — the kind of property L.I.S. Decorators works on across Devon and Cornwall" />
               <div className="badge"><strong>16+ yrs</strong><span>decorating Devon &amp; Cornwall</span></div>
             </div>
             <div data-animate="right">
