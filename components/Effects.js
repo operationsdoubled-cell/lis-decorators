@@ -153,18 +153,6 @@ export default function Effects() {
       });
     }
 
-    /* ---- Contact form (local-friendly message) ---- */
-    const form = document.getElementById('contactForm');
-    if (form) {
-      const onSubmit = (e) => {
-        e.preventDefault();
-        alert('Thanks for your message!\n\n(Note: connect the form to a service like Formspree, or use Vercel/Netlify form handling, before it can actually send emails — see the comment in the code.)');
-        form.reset();
-      };
-      form.addEventListener('submit', onSubmit);
-      cleanups.push(() => form.removeEventListener('submit', onSubmit));
-    }
-
     return () => cleanups.forEach((fn) => fn());
   }, [pathname]);
 

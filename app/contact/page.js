@@ -1,3 +1,5 @@
+import ContactForm from '@/components/ContactForm';
+
 export const metadata = {
   title: 'Contact | L.I.S. Decorators Devon & Cornwall',
   description: 'Contact L.I.S. Decorators in Liskeard, Cornwall — call 07548 625358 for a free quote on painting and decorating across Devon and Cornwall.',
@@ -45,47 +47,7 @@ export default function ContactPage() {
             </div>
 
             <div data-animate="right">
-              <div className="contact-form">
-                <h3 style={{ marginBottom: '24px' }}>Send us a message</h3>
-
-                {/* CONTACT FORM — sign up free at https://formspree.io,
-                    then change action="#" to action="https://formspree.io/f/YOUR_ID"
-                    and set method="POST" to receive emails from this form. */}
-                <form action="#" method="POST" id="contactForm">
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label htmlFor="name">Your Name *</label>
-                      <input type="text" id="name" name="name" required placeholder="Jane Smith" />
-                    </div>
-                    <div className="form-group">
-                      <label htmlFor="phone">Phone</label>
-                      <input type="tel" id="phone" name="phone" placeholder="07700 900000" />
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required placeholder="jane@example.com" />
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="service">Service Interested In</label>
-                    <select id="service" name="service" defaultValue="">
-                      <option value="">— Please select —</option>
-                      <option>Internal Painting &amp; Decorating</option>
-                      <option>External Painting &amp; Decorating</option>
-                      <option>Wallpaper Hanging</option>
-                      <option>Pressure Washing</option>
-                      <option>Roof &amp; Gutter Cleaning</option>
-                      <option>General Enquiry</option>
-                    </select>
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="message">Message *</label>
-                    <textarea id="message" name="message" required placeholder="Tell us a bit about your project and what you&apos;re looking for…"></textarea>
-                  </div>
-                  <button type="submit" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>Send Message <i data-lucide="send"></i></button>
-                  <p className="form-note">Or call us directly on <a href="tel:07548625358">07548 625358</a> — we&apos;re happy to chat through what you need.</p>
-                </form>
-              </div>
+              <ContactForm />
             </div>
 
           </div>
