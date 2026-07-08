@@ -99,11 +99,16 @@ export default function ContactPage() {
       <section className="section-tight" style={{ paddingTop: 0 }}>
         <div className="container">
           <div className="map-frame" data-animate>
-            <div className="map-placeholder">
-              <div className="big-icon"><i data-lucide="map"></i></div>
-              <h3 style={{ margin: 0 }}>61 Twelvewoods Pl, Dobwalls, Liskeard PL14 6JP</h3>
-              <p>Replace this box with a Google Maps embed — go to maps.google.com, search your address, Share → Embed a map, copy the iframe and paste it here.</p>
-            </div>
+            <iframe
+              src="https://maps.google.com/maps?q=50.458395,-4.520584&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0, display: 'block' }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="L.I.S. Decorators — 61 Twelvewoods Pl, Dobwalls, Liskeard PL14 6JP"
+            />
           </div>
         </div>
       </section>
