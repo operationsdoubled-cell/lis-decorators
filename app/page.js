@@ -29,7 +29,7 @@ export default function HomePage() {
           <div className="section-head">
             <span className="eyebrow center" data-animate>Welcome</span>
             <h2 data-animate data-delay="1">Quality decorating, done right</h2>
-            <p data-animate data-delay="2">L.I.S. Decorators is a professional painting and decorating business based in Dobwalls, Liskeard, with over 8 years of experience working across Devon and Cornwall. From new builds to renovations — high-quality, reliable and great value service every time.</p>
+            <p data-animate data-delay="2">L.I.S. Decorators is a professional painting and decorating business based in Dobwalls, Liskeard, with over 16 years of experience working across Devon and Cornwall. From new builds to renovations — high-quality, reliable and great value service every time.</p>
           </div>
           <div className="tiles tiles-2" style={{ marginTop: '8px', marginBottom: '60px' }}>
             <div className="text-tile feature-tile" data-animate data-delay="1" style={{ textAlign: 'center' }}>
@@ -48,7 +48,7 @@ export default function HomePage() {
           <div className="container">
             <div className="stats-grid">
               <div data-animate data-delay="1">
-                <div className="stat-num"><span data-count="8">0</span><span className="suffix">+</span></div>
+                <div className="stat-num"><span data-count="16">0</span><span className="suffix">+</span></div>
                 <div className="stat-label">Years&apos; Experience</div>
               </div>
               <div data-animate data-delay="2">
@@ -120,7 +120,7 @@ export default function HomePage() {
             <div className="feature" data-animate data-delay="2">
               <div className="feature-icon"><i data-lucide="award"></i></div>
               <h3>High Quality Finishes</h3>
-              <p>8+ years of experience delivering a finish that stands out — from new builds to period properties.</p>
+              <p>16+ years of experience delivering a finish that stands out — from new builds to period properties.</p>
             </div>
             <div className="feature" data-animate data-delay="3">
               <div className="feature-icon"><i data-lucide="map-pin"></i></div>

@@ -7,45 +7,59 @@ export const metadata = {
 
 const photos = [
   {
-    full: '/images/gallery-1.jpg',
-    src: '/images/gallery-1.jpg',
-    alt: 'Interior painting — open plan living space with skylights',
-    label: 'Interior Painting — Open Plan Living Space',
+    full: '/images/LIS_01.jpg',
+    src: '/images/LIS_01.jpg',
+    alt: 'Staircase and landing — natural wood bannisters and panelling',
+    label: 'Staircase & Landing Woodwork',
     tall: true,
   },
   {
-    full: '/images/gallery-2.jpg',
-    src: '/images/gallery-2.jpg',
-    alt: 'Interior decorating — luxury new build with glass balustrades',
-    label: 'Luxury New Build — Interior Decorating',
-    tall: true,
-  },
-  {
-    full: '/images/gallery-3.jpg',
-    src: '/images/gallery-3.jpg',
-    alt: 'Wallpaper hanging — bold feature walls throughout',
-    label: 'Wallpaper Hanging — Feature Walls',
+    full: '/images/LIS_02.jpg',
+    src: '/images/LIS_02.jpg',
+    alt: 'Kitchen with cream shaker cabinets and wood flooring',
+    label: 'Kitchen Cabinetry & Walls',
     tall: false,
   },
   {
-    full: '/images/gallery-4.jpg',
-    src: '/images/gallery-4.jpg',
-    alt: 'Interior decorating — open plan kitchen and living area',
-    label: 'Kitchen & Open Plan Living — Interior Decorating',
-    tall: true,
-  },
-  {
-    full: '/images/gallery-5.jpg',
-    src: '/images/gallery-5.jpg',
-    alt: 'Painted kitchen cabinetry — dark navy with brass fittings',
-    label: 'Painted Kitchen Cabinetry',
+    full: '/images/LIS_03.jpg',
+    src: '/images/LIS_03.jpg',
+    alt: 'Hallway with staircase and wood flooring throughout',
+    label: 'Hallway & Staircase',
     tall: false,
   },
   {
-    full: '/images/gallery-6.jpg',
-    src: '/images/gallery-6.jpg',
-    alt: 'Interior painting — open plan living space with countryside views',
-    label: 'Interior Painting — Living Space, Cornwall',
+    full: '/images/LIS_04.jpg',
+    src: '/images/LIS_04.jpg',
+    alt: 'Staircase with freshly painted white bannisters and newel posts',
+    label: 'Painted Staircase & Bannisters',
+    tall: true,
+  },
+  {
+    full: '/images/LIS_05.jpg',
+    src: '/images/LIS_05.jpg',
+    alt: 'Full kitchen with cream shaker units, hob and window',
+    label: 'Full Kitchen Repaint',
+    tall: false,
+  },
+  {
+    full: '/images/LIS_06.jpg',
+    src: '/images/LIS_06.jpg',
+    alt: 'Hallway after decorating — white painted staircase and woodwork',
+    label: 'Hallway After — White Woodwork',
+    tall: false,
+  },
+  {
+    full: '/images/LIS_07.jpg',
+    src: '/images/LIS_07.jpg',
+    alt: 'Bedroom with pine door and frame, carpeted floor',
+    label: 'Bedroom & Door Woodwork',
+    tall: false,
+  },
+  {
+    full: '/images/LIS_08.jpg',
+    src: '/images/LIS_08.jpg',
+    alt: 'Bathroom with wooden doors and tiled floor',
+    label: 'Bathroom & Woodwork',
     tall: false,
   },
 ];
@@ -54,7 +68,7 @@ export default function GalleryPage() {
   return (
     <>
       <section className="page-hero">
-        <div className="page-hero-bg" style={{ backgroundImage: "url('/images/gallery-2.jpg')" }}></div>
+        <div className="page-hero-bg" style={{ backgroundImage: "url('/images/LIS_06.jpg')" }}></div>
         <div className="container">
           <span className="eyebrow center" data-animate>Our Recent Work</span>
           <h1 data-animate data-delay="1">Work we&apos;re proud of</h1>
@@ -74,7 +88,7 @@ export default function GalleryPage() {
                 data-delay={String((i % 3) + 1)}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={p.src} alt={p.alt} loading="lazy" />
+                <img src={p.src} alt={p.alt} loading={i < 4 ? 'eager' : 'lazy'} />
                 <div className="overlay"><span><i data-lucide="maximize-2"></i> {p.label}</span></div>
               </div>
             ))}

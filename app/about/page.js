@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'About | L.I.S. Decorators Devon & Cornwall',
-  description: 'About L.I.S. Decorators — professional painting and decorating across Devon and Cornwall for over 8 years. Reliable, high quality, great value.',
+  description: 'About L.I.S. Decorators — professional painting and decorating across Devon and Cornwall for over 16 years. Reliable, high quality, great value.',
 };
 
 export default function AboutPage() {
@@ -22,7 +22,7 @@ export default function AboutPage() {
           <div className="split">
             <div className="split-media placeholder" data-animate="left">
               <i data-lucide="paint-roller"></i>
-              <div className="badge"><strong>8+ yrs</strong><span>decorating Devon &amp; Cornwall</span></div>
+              <div className="badge"><strong>16+ yrs</strong><span>decorating Devon &amp; Cornwall</span></div>
             </div>
             <div data-animate="right">
               <span className="eyebrow">Our Story</span>
@@ -30,7 +30,7 @@ export default function AboutPage() {
               <div className="tiles">
                 <div className="text-tile" data-animate data-delay="1">
                   <span className="tile-tag"><i data-lucide="paint-roller"></i> Who we are</span>
-                  <p>L.I.S. Decorators Devon &amp; Cornwall is run by Ben, a professional painter and decorator based in Dobwalls, Liskeard. With over 8 years of hands-on experience, we work on residential and commercial properties throughout Devon and Cornwall — from luxury new builds to period homes.</p>
+                  <p>L.I.S. Decorators Devon &amp; Cornwall is run by Ben, a professional painter and decorator based in Dobwalls, Liskeard. With over 16 years of hands-on experience, we work on residential and commercial properties throughout Devon and Cornwall — from luxury new builds to period homes.</p>
                 </div>
                 <div className="text-tile" data-animate data-delay="2">
                   <span className="tile-tag"><i data-lucide="sparkles"></i> How we work</span>
