@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="footer-col">
             <div className="footer-brand">
               <span className="nav-logo-mark"><i data-lucide="paint-roller"></i></span>
-              <strong>LIS Decorators</strong>
+              <strong>L.I.S. Decorators</strong>
             </div>
             <p>Professional painting and decorating across Devon and Cornwall. Reliable, high quality, great value. Transforming spaces. Enhancing homes.</p>
             <div className="footer-social">
@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2026 LIS Decorators Devon &amp; Cornwall &middot; Dobwalls, Liskeard PL14 6JP</p>
+          <p>&copy; 2026 L.I.S. Decorators Devon &amp; Cornwall &middot; Dobwalls, Liskeard PL14 6JP</p>
         </div>
       </div>
     </footer>

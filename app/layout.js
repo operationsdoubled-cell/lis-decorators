@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import Effects from '@/components/Effects';
 
 export const metadata = {
-  title: 'LIS Decorators Devon & Cornwall | Professional Painter & Decorator',
+  title: 'L.I.S. Decorators Devon & Cornwall | Professional Painter & Decorator',
   description:
     'Professional painting and decorating across Devon and Cornwall. Interior, exterior, wallpaper hanging, pressure washing and roof & gutter cleaning. Call 07548 625358 for a free quote.',
 };

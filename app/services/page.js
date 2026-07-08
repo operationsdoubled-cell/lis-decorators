@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Services | LIS Decorators Devon & Cornwall',
+  title: 'Services | L.I.S. Decorators Devon & Cornwall',
   description: 'Interior and exterior painting, wallpaper hanging, pressure washing and roof & gutter cleaning across Devon and Cornwall. Call 07548 625358 for a free quote.',
 };
 

@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Gallery | LIS Decorators Devon & Cornwall',
-  description: 'Gallery of recent painting and decorating work by LIS Decorators across Devon and Cornwall.',
+  title: 'Gallery | L.I.S. Decorators Devon & Cornwall',
+  description: 'Gallery of recent painting and decorating work by L.I.S. Decorators across Devon and Cornwall.',
 };
 
 const photos = [

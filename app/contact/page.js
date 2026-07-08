@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Contact | LIS Decorators Devon & Cornwall',
-  description: 'Contact LIS Decorators in Liskeard, Cornwall — call 07548 625358 for a free quote on painting and decorating across Devon and Cornwall.',
+  title: 'Contact | L.I.S. Decorators Devon & Cornwall',
+  description: 'Contact L.I.S. Decorators in Liskeard, Cornwall — call 07548 625358 for a free quote on painting and decorating across Devon and Cornwall.',
 };
 
 export default function ContactPage() {

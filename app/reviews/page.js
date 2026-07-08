@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Reviews | LIS Decorators Devon & Cornwall',
-  description: 'See what customers say about LIS Decorators — 5-star painting and decorating across Devon and Cornwall.',
+  title: 'Reviews | L.I.S. Decorators Devon & Cornwall',
+  description: 'See what customers say about L.I.S. Decorators — 5-star painting and decorating across Devon and Cornwall.',
 };
 
 const reviews = [

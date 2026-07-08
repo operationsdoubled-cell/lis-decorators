@@ -22,7 +22,7 @@ export default function Header() {
           <Link href="/" className="nav-logo">
             <span className="nav-logo-mark"><i data-lucide="paint-roller"></i></span>
             <span className="nav-logo-text">
-              <strong>LIS Decorators</strong>
+              <strong>L.I.S. Decorators</strong>
               <span>Devon &amp; Cornwall</span>
             </span>
           </Link>

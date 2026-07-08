@@ -29,7 +29,7 @@ export default function HomePage() {
           <div className="section-head">
             <span className="eyebrow center" data-animate>Welcome</span>
             <h2 data-animate data-delay="1">Quality decorating, done right</h2>
-            <p data-animate data-delay="2">LIS Decorators is a professional painting and decorating business based in Dobwalls, Liskeard, with over 8 years of experience working across Devon and Cornwall. From new builds to renovations — high-quality, reliable and great value service every time.</p>
+            <p data-animate data-delay="2">L.I.S. Decorators is a professional painting and decorating business based in Dobwalls, Liskeard, with over 8 years of experience working across Devon and Cornwall. From new builds to renovations — high-quality, reliable and great value service every time.</p>
           </div>
           <div className="tiles tiles-2" style={{ marginTop: '8px', marginBottom: '60px' }}>
             <div className="text-tile feature-tile" data-animate data-delay="1" style={{ textAlign: 'center' }}>
@@ -108,7 +108,7 @@ export default function HomePage() {
       <section className="section">
         <div className="container">
           <div className="section-head">
-            <span className="eyebrow center" data-animate>Why LIS Decorators</span>
+            <span className="eyebrow center" data-animate>Why L.I.S. Decorators</span>
             <h2 data-animate data-delay="1">Reliable, trusted, local</h2>
           </div>
           <div className="grid grid-4">
