@@ -7,16 +7,28 @@ export const metadata = {
 
 const reviews = [
   {
+    initial: 'R',
+    name: 'Richard Giblin',
+    meta: 'Google Review · July 2026',
+    text: "We needed a decorator that could wallpaper a wall of a refurbished room. We reached out to a local group and they recommended Ben. I contacted and he responded straight away and we arranged for him to come price the job and check out what we needed to do. Ben arrived punctually as arranged and cracked on straight away with the work in hand. Really pleased with the end result and it's finished off our room beautifully. Ben left the room nice and tidy and removed all waste. Thanks again Ben 👍🏼",
+  },
+  {
+    initial: 'F',
+    name: 'Freddie R',
+    meta: 'Google Review · March 2026',
+    text: "Brilliant quality of work! Ben is such a friendly, easy-going guy, who is fantastic at what he does. He sorted out the damp in our kitchen and did a top quality job of painting it after. He was efficient, clean and tidy and very reasonably priced. We'll be using him for all our decorating needs in the future! Thank you Ben :)",
+  },
+  {
     initial: 'J',
     name: 'John Blundell',
-    meta: 'Cornish Traders Review',
-    text: 'Great service, sensible pricing, quality work — highly recommended. Ben was professional throughout and the finished result was exactly what we wanted.',
+    meta: 'Google Review · December 2025',
+    text: 'Great service, sensible pricing, quality work, highly recommended 👌',
   },
   {
     initial: 'R',
     name: 'Richard Grant',
-    meta: 'Cornish Traders Review',
-    text: 'Incredibly high quality professional finish. The work was done quickly and with no fuss, for a very reasonable cost. Ben is a great guy — I would definitely use him again and recommend him to anyone.',
+    meta: 'Google Review · December 2025',
+    text: "Ben did some painting and decorating work for us earlier this month. We're really impressed with the high quality professional finish, which was done quickly with no fuss for a very reasonable and realistic cost. And Ben is a great guy as well. We'll definitely use him again and 100% recommend to anyone needing some decorating work to be done.",
   },
 ];
 
