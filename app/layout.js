@@ -3,6 +3,8 @@ import Script from 'next/script';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Effects from '@/components/Effects';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   title: 'L.I.S. Decorators Devon & Cornwall | Professional Painter & Decorator',
@@ -36,6 +38,8 @@ export default function RootLayout({ children }) {
         {/* Line icons (loaded from CDN, rendered by Effects) */}
         <Script src="https://unpkg.com/lucide@latest" strategy="afterInteractive" />
         <Effects />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
