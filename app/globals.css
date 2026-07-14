@@ -255,8 +255,11 @@ strong { color: var(--ink); font-weight: 600; }
   background: none;
   border: none;
   cursor: pointer;
-  padding: 8px;
+  padding: 10px 8px;
   z-index: 1100;
+  min-width: 44px;
+  min-height: 44px;
+  justify-content: center;
 }
 .nav-toggle span {
   display: block;
@@ -834,6 +837,7 @@ strong { color: var(--ink); font-weight: 600; }
   overflow: hidden;
   box-shadow: var(--shadow-md);
   border: 1px solid var(--line);
+  height: 400px;
 }
 .map-placeholder {
   background: linear-gradient(135deg, var(--cream-deep), var(--sage));
@@ -931,7 +935,7 @@ strong { color: var(--ink); font-weight: 600; }
 .footer-contact li { display: flex; align-items: center; gap: 10px; }
 .footer-social { display: flex; gap: 12px; margin-top: 6px; }
 .footer-social a {
-  width: 42px; height: 42px;
+  width: 44px; height: 44px;
   border-radius: 50%;
   border: 1px solid rgba(255,255,255,0.2);
   display: grid; place-items: center;
@@ -940,6 +944,16 @@ strong { color: var(--ink); font-weight: 600; }
 }
 .footer-social a:hover { background: var(--brass); border-color: var(--brass); transform: translateY(-3px); }
 .footer-bottom { padding-top: 24px; text-align: center; font-size: 0.82rem; color: rgba(255,255,255,0.5); }
+
+/* ============================================================
+   TOUCH DEVICES — always show gallery overlay label, faster taps
+   ============================================================ */
+@media (hover: none) {
+  .gallery-item .overlay { opacity: 1; }
+  .gallery-item .overlay span { transform: none; }
+  .btn, .nav-toggle, .nav-links a, .gallery-item,
+  .lightbox-close, .lightbox-nav, .footer-social a { touch-action: manipulation; }
+}
 
 /* ============================================================
    ACCESSIBILITY — reduced motion
@@ -1018,4 +1032,10 @@ select:focus-visible, textarea:focus-visible, .gallery-item:focus-visible {
 
   /* Buttons — better tap target */
   .btn { padding: 15px 24px; min-height: 50px; }
+
+  /* Map — shorter on phones */
+  .map-frame { height: 260px; }
+
+  /* Form inputs — explicit 16px prevents iOS auto-zoom on focus */
+  .form-group input, .form-group select, .form-group textarea { font-size: 16px; }
 }
