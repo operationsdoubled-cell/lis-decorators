@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import Effects from '@/components/Effects';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import CookieBanner from '@/components/CookieBanner';
 
 export const metadata = {
   title: 'L.I.S. Decorators Devon & Cornwall | Professional Painter & Decorator',
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
         <Effects />
         <Analytics />
         <SpeedInsights />
+        <CookieBanner />
       </body>
     </html>
   );

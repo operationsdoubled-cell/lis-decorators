@@ -1038,4 +1038,86 @@ select:focus-visible, textarea:focus-visible, .gallery-item:focus-visible {
 
   /* Form inputs — explicit 16px prevents iOS auto-zoom on focus */
   .form-group input, .form-group select, .form-group textarea { font-size: 16px; }
+
+  /* Cookie banner — stack on mobile */
+  .cookie-banner { flex-direction: column; align-items: stretch; padding: 16px 20px; gap: 14px; }
+  .cookie-dismiss { justify-content: center; }
 }
+
+/* ============================================================
+   COOKIE BANNER
+   ============================================================ */
+.cookie-banner {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 1200;
+  background: var(--paper);
+  border-top: 2px solid var(--brass);
+  box-shadow: 0 -8px 32px rgba(26, 45, 78, 0.12);
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.cookie-text {
+  flex: 1;
+  min-width: 200px;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  margin: 0;
+  line-height: 1.6;
+}
+.cookie-text a {
+  color: var(--moss);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.cookie-dismiss {
+  flex-shrink: 0;
+  padding: 11px 28px;
+  font-size: 0.88rem;
+  min-height: 44px;
+}
+
+/* ============================================================
+   FORM CONSENT CHECKBOX
+   ============================================================ */
+.form-consent { margin-bottom: 20px; }
+.consent-label {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--forest);
+  line-height: 1.55;
+}
+.consent-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  margin-top: 2px;
+  accent-color: var(--moss);
+  cursor: pointer;
+}
+.consent-label a {
+  color: var(--moss);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ============================================================
+   PRIVACY POLICY PAGE
+   ============================================================ */
+.policy-container { max-width: 760px; }
+.policy-section {
+  margin-bottom: 36px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--line);
+}
+.policy-section:last-of-type { border-bottom: none; }
+.policy-section h3 { margin-bottom: 12px; font-size: 1.2rem; }
+.policy-section p { font-size: 0.98rem; }
+.policy-section a { color: var(--moss); text-decoration: underline; text-underline-offset: 2px; }

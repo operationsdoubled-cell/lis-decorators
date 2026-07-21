@@ -1,6 +1,7 @@
 'use client';
 
 import { useForm, ValidationError } from '@formspree/react';
+import Link from 'next/link';
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm('mjgqqgly');
@@ -54,6 +55,16 @@ export default function ContactForm() {
           <textarea id="message" name="message" required placeholder="Tell us a bit about your project and what you&apos;re looking for…"></textarea>
           <ValidationError field="message" errors={state.errors} />
         </div>
+        <div className="form-group form-consent">
+          <label className="consent-label">
+            <input type="checkbox" name="consent" required />
+            <span>
+              I agree to my submitted details being processed by Formspree to handle my enquiry.{' '}
+              <Link href="/privacy-policy">Privacy Policy</Link>.
+            </span>
+          </label>
+        </div>
+
         <button
           type="submit"
           className="btn btn-primary"
